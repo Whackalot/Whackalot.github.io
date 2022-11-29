@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Yusuf">
+        <meta charset="utf-8">
+        <link href="css/form_YIb44110.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/navigation_YIb44110.css">
+        <script src="script/video_YIb44110.js"></script>
+        <title>Survey and Video</title>
+    </head>
+    <body>
+        <header>
+            <h1>7 Ancient Wonders of the World</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="page2_YIb44110.html">The seven wonders continued</a></li>
+                <li><a href="page3_YIb44110.html">Survey and Video page</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <form name="myform" action='' method="get">
+                <fieldset>
+                    <legend>Survey Info</legend>
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" 
+                        placeholder="Enter your name" required>
+                    </div>
+                    <div> 
+                        <label for="survey">Would you like to take a short survey on this Website?</label>
+                        <span>
+                            <input type="radio" name="survey" id="yes" value="yes" required> Yes
+                            <input type="radio" name="survey" id="no" value="no" required> No
+                        </span>
+                    </div>
+                    
+                    
+                    <div>
+                        <input type="submit" name="apply_choice" value="Apply Choice" onClick="return validation(this.form)">
+                    </div>
+                    <div>
+                        <p id="data_target1">
+
+                        </p>
+                    </div>
+                    <div id="video_target">
+                        <iframe id="ytvid" src="https://www.youtube.com/embed/1YWPMZ6pHm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Survey</legend>
+                
+                <div>
+                    <p id="data_target">
+                        
+                    </p>
+                </div>
+                
+    
+                <div id="survey_Q1"> 
+                    <label for="surveyQ1">How did you like this website?</label>
+                    <span>
+                        <input type="radio" name="surveyQ1" id="yesQ1" value="yes" required> It was good <br>
+                        <input type="radio" name="surveyQ1" id="maybeQ1" value="maybe" required> It was alright<br>
+                        <input type="radio" name="surveyQ1" id="noQ1" value="no" required> It was not good<br>
+                    </span>
+                </div>
+                <div id="survey_Q2"> 
+                    <label for="surveyQ2">How did you like the topic discussed?</label>
+                    <span>
+                        <input type="radio" name="surveyQ2" id="yesQ2" value="yes" required> It was good<br>
+                        <input type="radio" name="surveyQ2" id="maybeQ2" value="maybe" required> It was alright<br>
+                        <input type="radio" name="surveyQ2" id="noQ2" value="no" required> It was not good<br>
+                    </span>
+                </div>
+                <div id="survey_Q3"> 
+                    <label for="surveyQ3">Any comments you would like to add about this website?</label>
+                        
+                    <textarea name="description" cols="20" rows="10"></textarea>
+                        
+                </div>
+                <div>
+                    <p id="data_target2">
+                        
+                    </p>
+                </div>
+                <div id="submit2">
+                    <input type="submit" name="apply_choice2" value="Apply Choice" onClick="return submittedForm(this.form)">
+                </div>
+            </fieldset>
+            </form>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
